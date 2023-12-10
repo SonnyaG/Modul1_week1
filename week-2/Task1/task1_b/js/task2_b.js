@@ -1,7 +1,7 @@
 function calculateDays() {
     let month = parseInt(document.getElementById("month").value);
     let days;
-    if (month < 1 || month > 12) {
+    if (month < 1 || month > 12 ) {
         document.getElementById("result").innerHTML = "Некорректный номер месяца";
         return;
     }

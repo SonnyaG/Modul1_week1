@@ -1,23 +1,15 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-  <style>
-    p {
-      font-size: 18px;
-      font-weight: bold;
-    }
-  </style>
+ <title>Возраст</title>
+ <link rel="stylesheet" href="css/pagestyle.css">
 </head>
 <body>
-  <input type="number" id="ageInput">
-  <button onclick="showAge()">Показать возраст</button>
-  <p id="result"></p>
-    <script>
-        function declOfNum(number, titles) { // склонение именительных рядом с числительным
-        cases = [2, 0, 1, 1, 1, 2];  
-        return number+" "+titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
-        }
-        document.write( declOfNum(18, ['год', 'года', 'лет']) );
-    </script>
+ <h1>Введите ваш возраст:</h1>
+ <input type="number" id="age">
+ <button onclick="calculateAge()">Получить результат</button>
+ <p id="result"></p>
+
+ <script src="js/pagescript.js"></script>
 </body>
 </html>

@@ -2,6 +2,13 @@ function Start_button() {
     window.location.href = "SecondPage.html";
   }
 
+  // function page2fcn() {
+  //   console.log(5);
+  //   document.querySelector<HTMLDivElement>('#page')!.innerhtml
+  // }
+
+
+
   // const getAgeWord  {
   //   let lastDigit = age % 10;
   //   let lastTwoDigits = age % 100;
