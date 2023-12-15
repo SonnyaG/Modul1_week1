@@ -3,40 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>String Occurrences Counter</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    input {
-      padding: 10px;
-      margin: 20px 0;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-    }
-  </style>
+  <title>Вычесление количества вхождений в строке</title>
+  <link rel="stylesheet" href="css/taskcss.css">
 </head>
 <body>
-  <h1>String Occurrences Counter</h1>
-  <input type="text" id="mainString" placeholder="Enter the main string">
-  <input type="text" id="subString" placeholder="Enter the sub string">
-  <button onclick="countOccurrences()">Count Occurrences</button>
+  <h1>Вычесление количества вхождений в строке</h1>
+  <input type="text" id="mainString" placeholder="Где искать">
+  <input type="text" id="subString" placeholder="Что искать">
+  <button onclick="countOccurrences()">Подсчет вхождений</button>
   <p id="result"></p>
 
-  <script>
-    function countOccurrences() {
-      const mainString = document.getElementById('mainString').value;
-      const subString = document.getElementById('subString').value;
-
-      // Count occurrences of subString in mainString
-      const regex = new RegExp(subString, 'g');
-      const occurrences = (mainString.match(regex) || []).length;
-
-      document.getElementById('result').innerText = "The sub string" +subString+ " occurs "+occurrences+" times in the main string.";
-    }
-  </script>
+  <script src="js/taskscript-a.js"></script> 
 </body>
 </html>
